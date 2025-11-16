@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="country.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <h1><a href="/" class="logo">Where in the world?</a></h1>
+        <p class="theme-change"><i class="ri-moon-line"></i>Dark Mode</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="country-details">
+        <button class="back-btn">
+          <i class="ri-arrow-left-long-line"></i>Back
+        </button>
+        <div class="country-details-content">
+          <div class="country-img">
+            <img src="" alt="country flag" />
+          </div>
+          <div class="country-text">
+            <h3 class="country-name"></h3>
+            <div class="country-detail-text">
+              <div class="left-text">
+                <p>
+                  <b>Native Name:&nbsp;</b><span class="native-name"></span>
+                </p>
+                <p><b>Population:&nbsp;</b><span class="population"></span></p>
+                <p><b>Region:&nbsp;</b><span class="region"></span></p>
+                <p><b>Sub Region:&nbsp;</b><span class="sub-region"></span></p>
+                <p><b>Capital:&nbsp;</b><span class="capital"></span></p>
+              </div>
+              <div class="right-text">
+                <p>
+                  <b>Top Level Domain:&nbsp;</b><span class="domain"></span>
+                </p>
+                <p><b>Currencies:&nbsp;</b><span class="currency"></span></p>
+                <p><b>Languages:&nbsp;</b><span class="languages"></span></p>
+              </div>
+            </div>
+            <div class="border-countries"><b>Border Countries: </b>&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="country.js"></script>
+  </body>
+</html>

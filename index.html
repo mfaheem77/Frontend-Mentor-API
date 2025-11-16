@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <h1><a href="/" class="logo">Where in the world?</a></h1>
+        <p class="theme-change"><i class="ri-moon-line"></i>Dark Mode</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="search-filter">
+        <div class="input-container">
+          <i class="ri-search-line"></i>
+          <input type="text" placeholder="Search for a country..." />
+        </div>
+
+        <select class="filters">
+          <option hidden selected>Filter by Region</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+
+      <div class="country-container">
+        <div class="country-content"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

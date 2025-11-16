@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  --background-color: white;
+  --color: black;
+  --element-color: white;
+
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+body.dark {
+  --background-color: hsl(207, 26%, 17%);
+  --color: white;
+  --element-color: hsl(209, 23%, 22%);
+}
+
+.country-details {
+  max-width: 1290px;
+  margin-inline: auto;
+}
+
+.back-btn {
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  border: none;
+  margin-block: 3rem;
+  cursor: pointer;
+  background-color: var(--element-color);
+  color: var(--color);
+}
+
+.back-btn i {
+  margin-right: 0.4rem;
+}
+
+.country-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 1rem;
+}
+
+.country-img {
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.1);
+  width: 30rem;
+  height: 20rem;
+}
+
+.country-img img {
+  object-fit: cover;
+}
+
+.country-name {
+  font-size: 1.6rem;
+}
+
+.country-detail-text {
+  column-count: 2;
+  display: flex;
+  column-gap: 7rem;
+}
+
+.country-detail-text p {
+  margin-top: 0.4rem;
+}
+
+.border-countries {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+}
+
+.border-countries a {
+  padding: 0.2rem 1.4rem;
+  box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.4rem;
+  /* margin-left: 0.5rem; */
+  background-color: var(--element-color);
+}
+
+@media (max-width: 980px) {
+  .country-details-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 590px) {
+  .country-details-content {
+    padding: 0;
+  }
+  .country-detail-text {
+    flex-direction: column;
+    column-count: 1;
+  }
+
+  .back-btn {
+    margin-block: 2rem;
+  }
+
+  .country-img {
+    width: 100%;
+    height: 100%;
+  }
+}
